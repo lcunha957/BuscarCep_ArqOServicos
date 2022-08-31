@@ -1,0 +1,27 @@
+usando: XAMPP PhpMyAdmin 
+banco de dados: MySQL
+
+Conexão:
+conexão em localhost.
+servidor: 127.0.0.01
+usuário: root
+senha: null
+porta: 3306
+banco de dados: ProjetoFOrm2110121106
+
+create database ProjetoForm2110121106
+
+create table alunocadastro(
+RA int (5),
+PrimeiroNome varchar(10) not null,
+NomeDoMeio varchar(30) not null,
+Sobrenome varchar (30) not null,
+Cep varchar (10) not null,
+Numero varchar(10) not null,
+Complemento varchar (30),
+Primary Key (RA)
+);
+
+// Dados de teste pelo Eclipse no projeto Java para testar Conexão (via connector j): 
+insert into Cadastro  values ('21101', 'Leandro', 'Hugo ', 'Nascimento de Freitas', '59060097', '282', 'null' ), 
+('21106', 'Lunara', 'Morena', 'Cunha', '79003030', '590', 'Sítio Margarida');
